@@ -1,6 +1,8 @@
 node{
   stage('Build') {
      sh '''
+     cd test1-maven
+     ls -al
      mvn test
      mvn install
      '''
