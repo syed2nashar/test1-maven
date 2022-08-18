@@ -1,5 +1,5 @@
 node{
-  stage('Environment') {
-     sh 'sudo apt install maven -Y'
+  stage('Build') {
+     sh 'mvn test'
   }
 }
