@@ -4,6 +4,6 @@ node{
      sh 'mvn install'
   }
   stage('Deploy'){
-    sh 'start_server.sh'
+    sh 'scripts/start_server.sh'
   }
 }
