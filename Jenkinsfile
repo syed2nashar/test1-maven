@@ -3,15 +3,13 @@ node{
      checkout scm
       }
    stage('Environment') {
-     // echo "$USER"
       sh 'git --version'
-     // echo "Branch: ${env.BRANCH_NAME}"
       sh 'printenv'
     }
   stage('Build') {
      sh '''
-//      cd test1-maven
-//      ls -al
+     cd test1-maven
+     ls -al
      mvn test
      mvn install
      '''
