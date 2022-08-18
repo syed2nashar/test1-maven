@@ -1,4 +1,7 @@
 node{
+  stage('Checkout') {
+     checkout scm
+    }
   stage('Build') {
      sh '''
      cd test1-maven
