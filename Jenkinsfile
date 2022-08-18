@@ -15,6 +15,6 @@ node{
      '''
   }
   stage('Artifacts'){
-    sh 'cp -r /bitnami/jenkins/home/workspace/MavenPipeline/test1-maven/target/justiceleague-tracker-0.0.1-SNAPSHOT.jar /home/bitnami'
+    sh 'cp -r /bitnami/jenkins/home/.m2/repository/com/justiceleague/justiceleague-tracker/0.0.1-SNAPSHOT/justiceleague-tracker-0.0.1-SNAPSHOT.jar /home/bitnami'
   }
 }
