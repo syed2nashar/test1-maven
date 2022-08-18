@@ -1,7 +1,6 @@
 node{
   stage('Checkout') {
      checkout scm
-    }
       }
    stage('Environment') {
       echo "$USER"
