@@ -1,10 +1,6 @@
 node{
   stage('Checkout') {
-     steps {
-        script {
-          git credentialsId: 'santoshnist2011', url: 'https://github.com/santoshnist2011/test1-maven.git'
-        }
-     }
+     sh 'git clone https://github.com/santoshnist2011/test1-maven.git'
     }
    stage('Environment') {
       sh 'git --version'
