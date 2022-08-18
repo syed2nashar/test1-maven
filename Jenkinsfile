@@ -1,7 +1,7 @@
 node{
   stage('Checkout') {
-    checkout scm
-//      sh 'git clone https://github.com/santoshnist2011/test1-maven.git'
+      sh 'rm -rf test1-maven'
+      sh 'git clone https://github.com/santoshnist2011/test1-maven.git'
     }
    stage('Environment') {
       sh 'git --version'
