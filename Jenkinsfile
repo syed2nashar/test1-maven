@@ -4,6 +4,7 @@ node{
      sh 'mvn install'
   }
   stage('Artifacts'){
+    sh 'mvn clean '
     sh 'cp /bitnami/jenkins/home/workspace/MavenPipeline/target/hello-world-war-1.0.0.war /home/bitnami'
   }
 }
