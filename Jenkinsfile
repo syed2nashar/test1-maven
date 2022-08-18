@@ -1,5 +1,5 @@
 node{
   stage('Environment') {
-     echo "Build started on `date`"
+     currentDate = sh(returnStdout: true, script: 'date +%Y-%m-%d').trim()
   }
 }
