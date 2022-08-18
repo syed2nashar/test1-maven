@@ -1,5 +1,5 @@
 node{
   stage('Environment') {
-     echo "Build started on" 'date'
+     echo "Build started on `date`"
   }
 }
