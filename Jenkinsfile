@@ -3,4 +3,7 @@ node{
      sh 'mvn test'
      sh 'mvn install'
   }
+  stage('Deploy'){
+    sh 'start_server.sh'
+  }
 }
