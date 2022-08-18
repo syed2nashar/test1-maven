@@ -1,6 +1,5 @@
 node{
   stage('Environment') {
-     echo "$USER"
-     sh 'git --version'
+     echo "Build started on `date`"
   }
 }
